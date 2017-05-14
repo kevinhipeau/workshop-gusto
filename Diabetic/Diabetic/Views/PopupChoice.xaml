@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="Diabetic.Views.PopupChoice"
+                  CloseWhenBackgroundIsClicked="False"
+             Title="PopupChoice">
+    <StackLayout VerticalOptions="Center"  HorizontalOptions="Center" Margin="50" BackgroundColor="White">
+
+        <Label Margin="0, 10, 0, 0" Text="Quel est votre repas ?" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center"></Label>
+        <Grid Margin="15, 15, 15, 10" ColumnSpacing="10"   >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+
+          <Image x:Name="morningLayout" VerticalOptions="FillAndExpand"  Source="{Binding Converter={StaticResource StringToImageConverter},ConverterParameter=cafe.png}" Grid.Column="0" Grid.Row="0" HeightRequest="10" WidthRequest="10"/>
+            <Image x:Name="lunchLayout" VerticalOptions="FillAndExpand"  Source="{Binding Converter={StaticResource StringToImageConverter},ConverterParameter=burger.png}"  Grid.Column="0" Grid.Row="1"  HeightRequest="10" WidthRequest="10"></Image>
+            <Image x:Name="afternoonLayout"   VerticalOptions="FillAndExpand" Source="{Binding Converter={StaticResource StringToImageConverter},ConverterParameter=sunday.png}"  Grid.Column="0" Grid.Row="2"  HeightRequest="10" WidthRequest="10"></Image>
+            <Image x:Name="eveningLayout"  VerticalOptions="FillAndExpand"  Source="{Binding Converter={StaticResource StringToImageConverter},ConverterParameter=frites.png}"  Grid.Column="0" Grid.Row="3"  HeightRequest="10" WidthRequest="10"></Image>
+          <StackLayout Grid.Column="1" Grid.Row="0" x:Name="morningLayout1">
+            <Label Text="Petit Dejeuner" FontSize="15" Margin="10"  VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+          </StackLayout>
+          <StackLayout Grid.Column="1" Grid.Row="1" x:Name="lunchLayout1">
+            <Label Text="Dejeuner"  Margin="10" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+          </StackLayout>
+          <StackLayout Grid.Column="1" Grid.Row="2" x:Name="afternoonLayout1">
+            <Label Text="Gouter"  Margin="10" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+          </StackLayout>
+          <StackLayout Grid.Column="1" Grid.Row="3" x:Name="eveningLayout1">
+            <Label Text="Diner"   Margin="10" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"></Label>
+          </StackLayout>
+
+        </Grid>
+</StackLayout>
+</pages:PopupPage>

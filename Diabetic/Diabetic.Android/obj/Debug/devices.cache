@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Devices>
+  <Device id="192.168.249.101:5555">
+    <ResultingAbi>x86</ResultingAbi>
+    <SdkVersion>21</SdkVersion>
+  </Device>
+  <Device id="230d29da">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
+  <Device id="W3D4C16303001087">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
+  <Device id="192.168.192.101:5555">
+    <ResultingAbi>x86</ResultingAbi>
+    <SdkVersion>21</SdkVersion>
+  </Device>
+</Devices>

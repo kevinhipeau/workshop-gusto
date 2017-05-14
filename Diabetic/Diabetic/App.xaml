@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converter="clr-namespace:Diabetic.Converter;assembly=Diabetic"
+             x:Class="Diabetic.App">
+  <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="PrimaryDark">#1976D2</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightBackgroundColor">#FAFAFA</Color>
+            <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
+            <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <DataTemplate x:Key="DataTemplateProduct">
+                <ViewCell>
+               
+                    <StackLayout>
+                        <Frame Padding="0,0,0,0"  HorizontalOptions="FillAndExpand" OutlineColor="Black" HasShadow="True"  >
+                            <Grid Padding="5,0,5,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="15"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                           
+                                <Image Source="{Binding Img}" WidthRequest="40" HeightRequest="40"></Image>
+                            <Label Grid.Row="1" Text="{Binding Name}" HorizontalTextAlignment="Center" FontSize="12"></Label>
+                                <Button Grid.Row="2" BackgroundColor="#bd618a" FontSize="10" Text="Ajouter" TextColor="White" HeightRequest="40"></Button>
+                        </Grid>
+                        </Frame>
+                    </StackLayout>
+              
+                    </ViewCell>
+            </DataTemplate>
+       
+            <converter:WidthMarginConverter  x:Key="WidthMarginConverter"></converter:WidthMarginConverter>
+            <converter:SliceToListConverter x:Key="SliceToListConverter"></converter:SliceToListConverter>
+            <converter:SliceToListConverter2 x:Key="SliceToListConverter2"></converter:SliceToListConverter2>
+            <converter:IntToPortionConverter x:Key="IntToPortionConverter"></converter:IntToPortionConverter>
+            <converter:StringToImageConverter x:Key="StringToImageConverter"></converter:StringToImageConverter>
+            <converter:BoolConverter x:Key="BoolConverter"></converter:BoolConverter>
+            <converter:BoolToImage x:Key="BoolToImage"></converter:BoolToImage>
+        </ResourceDictionary>
+      
+    </Application.Resources>
+</Application>

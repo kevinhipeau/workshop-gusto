@@ -1,0 +1,2 @@
+C:\Users\n550\Documents\Visual Studio 2015\Projects\ynov\Diabetic\Diabetic\Diabetic.UWP\Diabetic.UWP.csproj;x86
+C:\Users\n550\Documents\Visual Studio 2015\Projects\ynov\Diabetic\Diabetic\Diabetic\Diabetic.csproj;neutral

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="Diabetic.Views.PopUpInscriptionPage"
+                 CloseWhenBackgroundIsClicked="False"
+             Title="PopUpInscriptionPage">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="50" Padding="10" BackgroundColor="White">
+   
+        <Label Text="Sucres lents" TextColor="#ba5e8a"></Label>
+        <Entry Grid.Row="1" Text="0" x:Name="slow"  Placeholder="0 Gr" PlaceholderColor="White" Keyboard="Numeric" TextColor="White" BackgroundColor="#ba5e8a" HorizontalOptions="FillAndExpand"></Entry>
+        <Label Grid.Row="2" Text="Sucres rapides" TextColor="#008d7e"></Label>
+        <Entry Grid.Row="3" Text="0" x:Name="fast" TextColor="White" PlaceholderColor="White" Placeholder="0 Gr" Keyboard="Numeric" BackgroundColor="#008d7e" HorizontalOptions="FillAndExpand"></Entry>
+        <Button Grid.Row="4" Clicked="Button_OnClicked" Text="Ok" TextColor="White" BackgroundColor="#f5c1a9" HorizontalOptions="Center"></Button>
+
+</StackLayout>
+</pages:PopupPage>
